@@ -205,6 +205,7 @@ async def echo_message(message: types.Message):
 thread_telegram = threading.Thread(target=executor.start_polling(dp),
                                    name="proc_telegram_thread_bot")
 
+
 if __name__ == '__main__':
     # telegram bot start
     thread_telegram.start()
